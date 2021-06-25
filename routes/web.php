@@ -19,8 +19,12 @@ Route::get('/', function () {
 
 //exo1 ------------------------
 
-Route::get('/{name}/{lastName}', function ($name, $lastName) {
-    return 'bonjour ' .$name .' ' .$lastName;
-});
+// Route::get('/{name}/{lastName}', function ($name, $lastName) {
+//     return 'bonjour ' .$name .' ' .$lastName;
+// });
 
-//exo2 -------------------------
+//correction -------------------
+
+Route::get('/{a}/{b}', function ($a, $b) {
+    return view('welcome', compact('a', 'b'));
+});

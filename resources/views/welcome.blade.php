@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Bonjour {{$a}} {{$b}}</h1>
+    <h1>Bonjour {{$a .' '.$b}}</h1>
 </body>
 </html>
